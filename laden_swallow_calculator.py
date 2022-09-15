@@ -4,10 +4,11 @@
 Function who calculates the amount of swallows needed.
 Includes a conditional output string.
 """
+import math
 
 
 def swallow_calc(coconut=454, swallow_capacity=20):
-    return coconut / swallow_capacity
+    return math.ceil(coconut / swallow_capacity)
 
 
 coconut = int(input('Coconut weight: '))
